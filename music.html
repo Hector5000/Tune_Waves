@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tune Waves</title>
+  <link rel="icon" type="image/x-icon" href="assets/img/xcon.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Borel&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo"><img src="assets/img/frcon.png" width="36px" alt="">Tune Waves</div>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <nav class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="music.html">Music</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <nav class="nav-b">
+        <ul >
+          <li><a href="index.html">Home</a></li>
+          <li><a href="music.html">Music</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+     
+    </div>
+  </header>
+  <main>
+    <div class="tender">
+      <h1>Music Page</h1>
+      <p>Welcome to my music collection</p>
+    </div>
+    <span class="rock-tx">CJ Ruffle's Songs</span>
+    <div class="music-container">
+      <div class="music-card">
+        <p class="music-title">Astronaut</p>
+        <audio class="audio-player" controls>
+          <source src="assets/songs/astronaut.mp3" type="audio/mpeg"> 
+          Your browser does not support the audio element.
+        </audio>
+        <a href="assets/songs/astronaut.mp3" download="astronaut by CJ Ruffle"><button class="download-botton" download >Download</button></a>
+      </div>
+      <div class="music-card">
+        <p class="music-title">Bad Critter</p>
+        <audio class="audio-player" controls>
+          <source src="assets/songs/bad critter.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <a href="assets/songs/bad critter.mp3" download="Bad Critter by CJ Ruffle"><button class="download-botton">Download</button></a>
+      </div>
+    </div>
+    <div class="music-container">
+      <div class="music-card">
+        <p class="music-title">The Flash</p>
+        <audio class="audio-player" controls>
+          <source src="assets/songs/flash.mp3" type="audio/mpeg"> 
+          Your browser does not support the audio element.
+        </audio>
+        <a href="assets/songs/flash.mp3" download="Flash by CJ Ruffle"><button class="download-botton" download >Download</button></a>
+      </div>
+      <div class="music-card">
+        <p class="music-title">Ranger Danger</p>
+        <audio class="audio-player" controls>
+          <source src="assets/songs/ranger danger.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <a href="assets/songs/ranger danger.mp3" download=""><button class="download-botton">Download</button></a>
+      </div>
+      
+    </div>
+    <span class="rock-tx">Other Latest Songs</span>
+    <div class="music-container">
+      <div class="music-card">
+        <p class="music-title">Khaid || Anabella</p>
+        <audio class="audio-player" controls>
+          <source src="assets/songs/Khaid-Anabella-(TrendyBeatz.com).mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <a href="assets/songs/Khaid-Anabella-(TrendyBeatz.com).mp3" download="Anabella by Khaid"><button class="download-botton" download >Download</button></a>
+      </div>
+      <div class="music-card">
+        <p class="music-title">Believer || Imagine Dragons</p>
+        <audio class="audio-player" controls>
+          <source src="assets/songs/Imagine_Dragons_-_Believer.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <a href="assets/songs/Imagine_Dragons_-_Believer.mp3" download="Believer By Imagine Dragons"><button class="download-botton">Download</button></a>
+      </div>
+    </div>
+    <div class="music-container">
+      <div class="music-card">
+        <p class="music-title">Vibe || Tyga</p>
+        <audio class="audio-player" controls>
+          <source src="assets/songs/Cookiee_Kawaii_Ft_Tyga_-_Vibe_If_I_Back_It_Up_Remix_.mp3" type="audio/mpeg"> 
+          Your browser does not support the audio element.
+        </audio>
+        <a href="assets/songs/Cookiee_Kawaii_Ft_Tyga_-_Vibe_If_I_Back_It_Up_Remix_.mp3" download="Vibe by "><button class="download-botton" download >Download</button></a>
+      </div>
+      <div class="music-card">
+        <p class="music-title">Enemy || Imagine Dragons</p>
+        <audio class="audio-player" controls>
+          <source src="assets/songs/Imagine_Dragons_-_Enemy.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <a href="assets/songs/Imagine_Dragons_-_Enemy.mp3" download="Enemy by Imagine Dragons"><button class="download-botton">Download</button></a>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2023 Tune Waves. All rights reserved.</p>
+  </footer>
+</body>
+<script>
+  hamburger = document.querySelector(".hamburger")
+  hamburger.onclick = function() {
+    navB = document.querySelector(".nav-b");
+    navB.classList.toggle("active");
+  }
+</script>
+</html>
+

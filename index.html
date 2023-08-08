@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tune Waves</title>
+  <link rel="icon" type="image/x-icon" href="assets/img/xcon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo"><img src="assets/img/frcon.png" width="36px" alt="">Tune Waves</div>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <nav class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="music.html">Music</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <nav class="nav-b">
+        <ul >
+          <li><a href="index.html">Home</a></li>
+          <li><a href="music.html">Music</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+     
+    </div>
+  </header>
+
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to <span style="color: green;">Tune Waves</span></h1>
+      <p>Discover and enjoy the best music in one place.</p>
+      <a href="music.html" class="btn">Explore</a>
+    </div>
+  </section>
+
+  <section class="featured-artists">
+    <h2>Featured Artists</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="assets/img/profile.jpg" alt="Artist 1">
+        <h3>Artist 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="card">
+        <img src="assets/img/testimonials-5.jpg" alt="Artist 2">
+        <h3>Artist 2</h3>
+        <p>Nullam nec purus non est commodo fringilla non et turpis.</p>
+      </div>
+      <!-- Add more cards for other featured artists -->
+    </div>
+  </section>
+  
+  <section class="latest-albums">
+    <h2>Latest Albums</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="assets/img/disc.png" alt="Album 1">
+        <h3>Album 1</h3>
+        <p>Proin at pulvinar nisi. Nulla facilisi.</p>
+      </div>
+      <div class="card">
+        <img src="assets/img/disc.png" alt="Album 2">
+        <h3>Album 2</h3>
+        <p>Sed sed velit eu sapien mattis fermentum.</p>
+      </div>
+      <!-- Add more cards for other latest albums -->
+    </div>
+  </section>
+
+  <section class="appreciation-section">
+    <div class="appreciation-content">
+      <div class="circle-image">
+        <img src="assets/img/music5.jpg" alt="Circle Image">
+      </div>
+      <div class="appreciation-text">
+        <h2>Appreciation to All My Fans</h2>
+        <p>Thank you for your continuous support and love for my music. Without you, none of this would be possible. Your encouragement and enthusiasm inspire me to create more and strive for excellence. I am deeply grateful for each and every one of you!</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Tune Waves. All rights reserved.</p>
+  </footer>
+</body>
+<script>
+  hamburger = document.querySelector(".hamburger")
+  hamburger.onclick = function() {
+    navB = document.querySelector(".nav-b");
+    navB.classList.toggle("active");
+  }
+</script>
+</html>
